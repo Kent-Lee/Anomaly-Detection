@@ -1,6 +1,6 @@
-# Anomaly Detection
+# Anomaly Detection on Household Electricity Consumption
 
-This is the final project for CMPT 318 Cybersecurity, which involves using `R` to perform statistical analysis and anomaly detection on a household electric power consumption dataset.
+This is the final project for CMPT 318 Cybersecurity course, which involves using `R` to perform statistical analysis and anomaly detection on a household electric power consumption dataset.
 
 The project consists of three main parts:
 
