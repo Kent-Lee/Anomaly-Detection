@@ -10,9 +10,15 @@ The project consists of three main parts:
 
     * **Out of Range** is based on the `Min` and `Max` values of a feature in specified time windows in training dataset.
 
-    * **Moving Average** is a fixed size window of observations which slides one record at a time. The average of the window is calculated to compare against the value of the record, if the difference is above or below a certain threshold, that record is considered a point anomaly.
+    * **Moving Average** is a fixed size window of observations which slides one record at a time. The average of the window is calculated to compare against the value of the record; if the difference is above or below a certain threshold, that record is considered a point anomaly.
 
 3. train **Hidden Markov Models** to compare the log-likelihoods between training and testing datasets. The higher the log-likelihood value, the better the model characterizing the data. So, in theory, the results between training and testing datasets should be similar, with the former performing better.
+
+## Libraries
+
+* `data.table` - for cleaning and aggregating data
+
+* `depmixS4` - for Hidden Markov Model functions
 
 ## Folder Structure
 
@@ -30,4 +36,4 @@ The project consists of three main parts:
 
 * The `figs` folder contains generated figures and statistical graphs.
 
-* The `output` folder contains process datasets, which are anomalous records in `.csv` files.
+* The `output` folder contains processed datasets, which are anomalous records in `.csv` files.
